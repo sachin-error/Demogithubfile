@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            width: 450px;
+        }
+
+        .sproduct {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .row {
+            margin: 20px;
+        }
+        .smallimggroup{
+display: flex;
+
+        }
+        .smallimgcol{
+           padding: 6px;
+           cursor: pointer;
+        }
+        .page{
+            display: flex;
+        }
+        .rightside{
+             margin-top:40px ;
+             font-size: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="page">
+    <section class="sproduct">
+        <div class="row"></div>
+        <div class="col-lg-5 col-md-12 clo-12">
+            <img class="img" src="./hoodie1.jpg" id="mainimg" alt="">
+            <div class="smallimggroup" >
+                <div class="smallimgcol">
+                    <img src="./hoodie1.jpg" width="100px" class="smallimg" alt="">
+
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="./hoodie5.jpg" width="100px" class="smallimg" alt="">
+
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="./hoodie3.jpg" width="100px" class="smallimg" alt="">
+
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="./hoodie4.jpg" width="100px" class="smallimg" alt="">
+
+                </div>
+            </div>
+        </div>
+      
+    </section>
+    <script>
+        var mainimg = document.getElementById('mainimg');
+        var Smallimg = document.getElementsByClassName('smallimg');
+
+        Smallimg[0].onclick= function(){
+            mainimg.src = Smallimg[0].src;
+        }
+
+        Smallimg[1].onclick= function(){
+            mainimg.src = Smallimg[1].src;
+        }
+
+        Smallimg[2].onclick= function(){
+            mainimg.src = Smallimg[2].src;
+        }
+
+        Smallimg[3].onclick= function(){
+            mainimg.src = Smallimg[3].src;
+        }
+    </script>
+  <div class="rightside">
+<h2>Men's Fashion Hoodie</h2>
+<h1>$20.00</h1>
+<form action="">
+    <label for="" >Size</label>
+    <select style="width: 80px; height: 40px;">
+        <option value="">M</option>
+        <option value="">L</option>
+        <option value="">S</option>
+        <option value="">XL</option>
+        <option value="">XXL</option>
+        <option value="">XXXL</option>
+    </select>
+    <label for="" ></label>
+    <input type="" name="" style="height: 40px;" width="200px;" font-size="70px"; id="">
+    
+</form>
+<button style="width: 200px; height: 60px; margin-top: 70px; font-size: 20px;">Add to Cart</button>
+</button>
+  </div>
+  </div>
+</body>
+
+</html>
